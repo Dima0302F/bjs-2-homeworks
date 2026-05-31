@@ -10,7 +10,7 @@ Student.prototype.setSubject = function (subjectName) {
 }
 
 Student.prototype.addMarks = function (...marks) {
-  // Проверяем, существует ли свойство marks (не отчислен ли студент)
+  // Проверяем не отчислен ли студент
   if (this.marks) {
     this.marks.push(...marks);
   }
